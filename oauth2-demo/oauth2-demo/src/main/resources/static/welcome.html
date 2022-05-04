@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>welcome</title>
+</head>
+<body>
+<script>
+  const query = window.location.search.substring(1) || '';
+  const name = query.split('name=')[1];
+  document.body.appendChild(
+      document.createTextNode(`Welcome, ${decodeURIComponent(name)}`)
+  );
+</script>
+</body>
+</html>
